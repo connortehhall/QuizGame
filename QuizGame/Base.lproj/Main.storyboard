@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shruthi is the most amazing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R32-iL-2Nm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R32-iL-2Nm">
                                 <rect key="frame" x="20" y="54" width="374" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="EQ6-Xz-nb0"/>
@@ -26,11 +26,35 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-6X-MEa">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.12941176470588234" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fme-0z-SKk"/>
+                                    <constraint firstAttribute="width" constant="200" id="iXB-mK-xCN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="l8m-iA-r79"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="lfP-f4-0M5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Play Quiz">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHT-OX-sBR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.066666666666666666" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" systemColor="systemPinkColor"/>
                         <constraints>
+                            <constraint firstItem="yeh-6X-MEa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DjF-vS-snW"/>
+                            <constraint firstItem="yeh-6X-MEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PdW-Bt-uK2"/>
                             <constraint firstItem="R32-iL-2Nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ebg-mu-1G5"/>
                             <constraint firstItem="R32-iL-2Nm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pOI-7Q-PML"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R32-iL-2Nm" secondAttribute="trailing" constant="20" id="yk1-cC-eM0"/>
@@ -40,6 +64,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ovZ-3U-rEd">
+            <objects>
+                <viewController id="LNa-vd-zbZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baf-4Y-Vfi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iKa-PC-5BG"/>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.066666666666666666" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMh-jG-rVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="72"/>
         </scene>
     </scenes>
     <resources>
