@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startGame() {
-        // do something
+        let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: true)
     }
 }

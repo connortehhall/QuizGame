@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B356EE64252159CB00F48D64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356EE63252159CB00F48D64 /* GameViewController.swift */; };
+		B356EE6C25215C0200F48D64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356EE6B25215C0200F48D64 /* GameViewController.swift */; };
 		B3BCC513251DB74B001F3963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCC512251DB74B001F3963 /* AppDelegate.swift */; };
 		B3BCC515251DB74B001F3963 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCC514251DB74B001F3963 /* SceneDelegate.swift */; };
 		B3BCC517251DB74B001F3963 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCC516251DB74B001F3963 /* ViewController.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B356EE63252159CB00F48D64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B356EE6B25215C0200F48D64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B3BCC50F251DB74B001F3963 /* QuizGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BCC512251DB74B001F3963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BCC514251DB74B001F3963 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				B3BCC51B251DB74D001F3963 /* Assets.xcassets */,
 				B3BCC51D251DB74D001F3963 /* LaunchScreen.storyboard */,
 				B3BCC520251DB74D001F3963 /* Info.plist */,
-				B356EE63252159CB00F48D64 /* GameViewController.swift */,
+				B356EE6B25215C0200F48D64 /* GameViewController.swift */,
 			);
 			path = QuizGame;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B356EE64252159CB00F48D64 /* GameViewController.swift in Sources */,
+				B356EE6C25215C0200F48D64 /* GameViewController.swift in Sources */,
 				B3BCC517251DB74B001F3963 /* ViewController.swift in Sources */,
 				B3BCC513251DB74B001F3963 /* AppDelegate.swift in Sources */,
 				B3BCC515251DB74B001F3963 /* SceneDelegate.swift in Sources */,

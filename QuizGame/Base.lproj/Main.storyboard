@@ -65,16 +65,54 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="ovZ-3U-rEd">
             <objects>
-                <viewController id="LNa-vd-zbZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="game" id="LNa-vd-zbZ" customClass="GameViewController" customModule="QuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="baf-4Y-Vfi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTJ-Ey-uyH">
+                                <rect key="frame" x="10" y="54" width="394" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="1c7-Kj-w17"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NQO-ia-h4W">
+                                <rect key="frame" x="0.0" y="304" width="414" height="558"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Gfm-kP-9QH">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gfm-kP-9QH" id="de3-MZ-GvU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iKa-PC-5BG"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.066666666666666666" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NQO-ia-h4W" firstAttribute="leading" secondItem="iKa-PC-5BG" secondAttribute="leading" id="Bj4-GU-JXP"/>
+                            <constraint firstItem="pTJ-Ey-uyH" firstAttribute="leading" secondItem="iKa-PC-5BG" secondAttribute="leading" constant="10" id="RUI-Kb-peM"/>
+                            <constraint firstItem="NQO-ia-h4W" firstAttribute="top" secondItem="pTJ-Ey-uyH" secondAttribute="bottom" id="Sze-Ry-R3T"/>
+                            <constraint firstItem="pTJ-Ey-uyH" firstAttribute="top" secondItem="iKa-PC-5BG" secondAttribute="top" constant="10" id="gcN-XC-Zb2"/>
+                            <constraint firstItem="iKa-PC-5BG" firstAttribute="bottom" secondItem="NQO-ia-h4W" secondAttribute="bottom" id="lvp-zq-b5f"/>
+                            <constraint firstItem="iKa-PC-5BG" firstAttribute="trailing" secondItem="NQO-ia-h4W" secondAttribute="trailing" id="nz8-Hb-CYJ"/>
+                            <constraint firstItem="iKa-PC-5BG" firstAttribute="trailing" secondItem="pTJ-Ey-uyH" secondAttribute="trailing" constant="10" id="qmV-8a-UY2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="pTJ-Ey-uyH" id="mJa-Tv-mky"/>
+                        <outlet property="table" destination="NQO-ia-h4W" id="WXB-0C-1Y1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMh-jG-rVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,6 +120,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
